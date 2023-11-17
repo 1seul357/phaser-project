@@ -1,4 +1,4 @@
-![image](https://github.com/1seul357/phaser-project/assets/110331817/de348f06-d22f-4715-af85-c4bc42515a2c)# Phaser Project(231106~231116)  
+# Phaser Project(231106~231116)  
 Notion: **[Phaser Project(231106~231116)](https://incredible-keeper-194.notion.site/Phaser-Project-231106-231116-6a19162ce0c84abf976fc8b3da75e511?pvs=4)**
 
 ## Thema : 2D RPG (Maple Stroy 모방)
@@ -18,7 +18,6 @@ Notion: **[Phaser Project(231106~231116)](https://incredible-keeper-194.notion.s
 
 ### SCENE0 : Player 선택
 
-!
 ![Scene0](https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FcWVSLP%2FbtsAr6Fasxi%2FqPykFGZnFnReSkwVLEbZm0%2Fimg.png)
 
 ### SCENE1 : 사냥터
@@ -297,7 +296,7 @@ Notion: **[Phaser Project(231106~231116)](https://incredible-keeper-194.notion.s
   ### tweens 적용 예시
 
   ![Animation2.gif](https://blog.kakaocdn.net/dn/bbQYhE/btsAqDpZnhe/LZiL1RJ9K2m5eQgZ6eIpP1/img.gif)
-  ![Animation1.gif](https://blog.kakaocdn.net/dn/L3hrv/btsAuNZcmTT/Y1MKXXpx3NujEHY8yVQQsK/img.gif)
+  ![Animation1.gif](https://blog.kakaocdn.net/dn/L3hrv/btsAuNZcmTT/Y1MKXXpx3NujEHY8yVQQsK/img.gif)  
   _참고 예제 : [https://phaser.io/examples/v3/view/tweens/counter-tween,](https://phaser.io/examples/v3/view/tweens/counter-tween) [https://labs.phaser.io/edit.html?src=src/game objects/graphics/health bars demo.js&v=3.60.0](https://phaser.io/examples/v3/view/game-objects/graphics/health-bars-demo)_
 
 - ## 🧚 Player
