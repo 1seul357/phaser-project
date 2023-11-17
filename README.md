@@ -297,7 +297,8 @@ Notion: **[Phaser Project(231106~231116)](https://incredible-keeper-194.notion.s
 
   ![Animation2.gif](https://blog.kakaocdn.net/dn/bbQYhE/btsAqDpZnhe/LZiL1RJ9K2m5eQgZ6eIpP1/img.gif)
   ![Animation1.gif](https://blog.kakaocdn.net/dn/L3hrv/btsAuNZcmTT/Y1MKXXpx3NujEHY8yVQQsK/img.gif)  
-  _참고 예제 : [https://phaser.io/examples/v3/view/tweens/counter-tween,](https://phaser.io/examples/v3/view/tweens/counter-tween) [https://labs.phaser.io/edit.html?src=src/game objects/graphics/health bars demo.js&v=3.60.0](https://phaser.io/examples/v3/view/game-objects/graphics/health-bars-demo)_
+  _참고 예제 : [https://phaser.io/examples/v3/view/tweens/counter-tween,](https://phaser.io/examples/v3/view/tweens/counter-tween),  
+   [https://labs.phaser.io/edit.html?src=src/game objects/graphics/health bars demo.js&v=3.60.0](https://phaser.io/examples/v3/view/game-objects/graphics/health-bars-demo)_
 
 - ## 🧚 Player
 
@@ -313,7 +314,7 @@ Notion: **[Phaser Project(231106~231116)](https://incredible-keeper-194.notion.s
 
   ### 개발
 
-  1. **3개의 Player 중 하나를 선택하여 게임 실행**
+  **1. 3개의 Player 중 하나를 선택하여 게임 실행**
 
   ![selectPlayer.gif](https://blog.kakaocdn.net/dn/xyxkI/btsAxcqoVRY/515ggaIj4jDF8glkmRRW4K/img.gif)
 
@@ -327,7 +328,7 @@ Notion: **[Phaser Project(231106~231116)](https://incredible-keeper-194.notion.s
 
   - `setInteractive` : pointer 이벤트를 주기 위해 Sprite 이미지에 `setInteractive` 설정
 
-  2. **서기, 걷기, 점프, 공격 동작 구현**
+  **2. 서기, 걷기, 점프, 공격 동작 구현**
 
   ```jsx
   //LR, Stand
@@ -354,7 +355,7 @@ Notion: **[Phaser Project(231106~231116)](https://incredible-keeper-194.notion.s
 
   - 키보드 조작과 데미지 여부에 따른 Animaition 부여
 
-  3. **Camera는 Player에 초점**
+  **3. Camera는 Player에 초점**
 
   ```jsx
   this.cameras.main.startFollow(this.player);
@@ -364,7 +365,7 @@ Notion: **[Phaser Project(231106~231116)](https://incredible-keeper-194.notion.s
   - `camera(Phaser.Cameras.Scene2D.CameraManager)`: 게임 화면에 대한 뷰포트 (플레이어의 시야)
   - `startFollow`로 초점 대상을 지정하고, `setBounds`로 가동 범위를 조절
 
-  4. **다른 객체들과의 상호작용(Portal, Monster)**
+  **4. 다른 객체들과의 상호작용(Portal, Monster)**
 
   ```jsx
   this.physics.add.overlap(this.player, this.enemies, () => {
@@ -385,7 +386,7 @@ Notion: **[Phaser Project(231106~231116)](https://incredible-keeper-194.notion.s
 
   ### **개발**
 
-  1. **항상 Player 뒤에 따라다닐 것**
+  **1. 항상 Player 뒤에 따라다닐 것**
 
   ```jsx
   //gap : player와 pet 사이의 거리
@@ -431,7 +432,7 @@ Notion: **[Phaser Project(231106~231116)](https://incredible-keeper-194.notion.s
   - 좌우키를 누르지 않았을 때 : 최대 거리(deadLine)안에 있지만 최소 거리(minLine)보다 멀어졌을 때 키보드를 입력하지 않아도 Pet이 Player에게 스스로 걸어올 수 있도록 처리
   - 따라서 아이템을 획득했을 때에 다시 Player에게 돌아오도록 할 수 있음
 
-  2. **일정 거리 내의 아이템을 스스로 획득할 것**
+  **2. 일정 거리 내의 아이템을 스스로 획득할 것**
 
   ```jsx
   if (
@@ -445,7 +446,7 @@ Notion: **[Phaser Project(231106~231116)](https://incredible-keeper-194.notion.s
   - `moveToObject` : 특정 게임 객체가 다른 게임 객체나 좌표로 이동할 수 있게 도와주는 메서드
   - 목적지까지 선형 이동하는 방식으로 중력 법칙을 반영하지 않음 (Pet의 조작에는 부적합)
 
-  3. **일정 거리 이상 멀어질 때 소환될 것**
+  **3. 일정 거리 이상 멀어질 때 소환될 것**
 
   ```jsx
   if (gap.x > this.deadLine || gap.y > this.deadLine) {
